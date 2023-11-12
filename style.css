@@ -22,7 +22,7 @@ margin-left: 10px;
     background-color: red;
 }
 
-@media all and (max-width:400px){
+@media screen and (max-width:400px){
 *{
    margin:0px ;
    padding:0px;
@@ -30,7 +30,7 @@ margin-left: 10px;
 #clcbtn{
     position: relative;
     right:300px ;
-    bottom:340px ;
+    bottom:380px ;
 }
 #container2{
     width: 450px;
