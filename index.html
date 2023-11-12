@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>
+        BMI Calculator - Body Mass Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-   
+    <link rel="icon" type="images/png"
+        href="data:image/png;base64,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">
 </head>
+
 <body>
-    <div  id="container2" style="background-color: #F1F1F1; " class="container pb-4">
+    <div id="container2" style="background-color: #F1F1F1; " class="container pb-4">
         <div class="d-flex">
             <img src="https://www.iciciprulife.com/content/icici-prudential-life-insurance/tools-and-calculators/bmi_assets/images/Component21.svg"
                 alt="">
@@ -24,17 +30,21 @@
             <div class="row">
                 <div class="col-4">
                     <div class="mt-5">
-                        <div  class="">
+                        <div class="">
                             <p class="fw-medium text-secondary">GENDER</p>
                         </div>
                         <div id="gender" class="d-flex ">
-                            <button id="male"  style="border:.2px solid red ; position: relative;left:15px ;background-color: white;" class="btn  text-secondary fw-semibold ps-5 pe-5" onclick="gender('Male')">Male</button>
-                            <button id="female" onclick="gender('Female')" style="border:.2px solid gray ;" class="btn  text-secondary fw-semibold ps-5 pe-5">Female</button>
+                            <button id="male"
+                                style="border:.2px solid red ; position: relative;left:15px ;background-color: white;"
+                                class="btn  text-secondary fw-semibold ps-5 pe-5" onclick="gender('Male')">Male</button>
+                            <button id="female" onclick="gender('Female')" style="border:.2px solid gray ;"
+                                class="btn  text-secondary fw-semibold ps-5 pe-5">Female</button>
                         </div>
                     </div>
                     <div class="mt-5">
                         <p class="fw-medium text-secondary">HEIGHT</p>
-                        <input id="myHeight" class="fw-semibold" style="border:none ;border-bottom:.5px solid ;" type="text" placeholder="CM">
+                        <input id="myHeight" class="fw-semibold" style="border:none ;border-bottom:.5px solid ;"
+                            type="text" placeholder="CM">
                         <p id="hNotify"></p>
                     </div>
                 </div>
@@ -44,51 +54,57 @@
                     </div>
                     <div>
                         <input id="age" class="form-control w-50 fw-semibold " placeholder="years" type="text">
-                        <span id="wNotify" style="color: rgb(139, 137, 137);font-weight:600;" class="">between 2 yrs to 120 yrs</span>
+                        <span id="wNotify" style="color: rgb(139, 137, 137);font-weight:600;" class="">between 2 yrs to
+                            120 yrs</span>
                     </div>
                     <div class="mt-4">
                         <p class="fw-medium text-secondary">WEIGHT</p>
                     </div>
                     <div>
-                        <input id="myWeigth" class="form-control w-50 fw-semibold text-start" placeholder="in Kgs" type="text">
+                        <input id="myWeigth" class="form-control w-50 fw-semibold text-start" placeholder="in Kgs"
+                            type="text">
                     </div>
                     <p id="Noty"></p>
                 </div>
-              <div id="loader" class="col-4 p-3">
-                <div style="width:400px ; height:280px ;" class="col-4 bg-body-secondary mt-5">
-                    <div class="pt-5" style="line-height:100% ; margin-top:30px ;">
-                      <p style="color:#B02A30 ;" class="text-center fs-4 fw-medium">Your BMI is</p>
-                      <p id="BMI" class="fs-1 fw-medium text-center">--</p>
-                      <div id="hide"  class="d-flex justify-content-around mt-5 ">
-                          <div id="yellow" class="line">
-                              <div id="meterBar" style="position: relative; bottom:7px ;font-size: 25px;" class=" fw-bolder">|</div>
-                          </div>
-                          <div id="green" class="line"></div>
-                          <div id="orange" class="line"></div>
-                          <div id="red" class="line"></div>
-                      </div>
-                     <div id="hide" class="d-flex justify-content-between mt-2">
-                      <div style="font-size: small;" class="fw-bolder text-secondary">Underweight</div>
-                      <div style="font-size: small;" class="fw-bolder text-secondary">Normal</div>
-                      <div style="font-size: small;" class="fw-bolder text-secondary"> Overweight</div>
-                      <div style="font-size: small;" class="fw-bolder text-secondary">Obesity</div>
-                     </div>
-                    </div>
-                    <p id="help" class="fw-bold  text-center mt-2"></p>
-                    <p id="help2" class="text-center fw-medium mb-3"></p>
-              
-                  </div>
-              </div>
-            </div>
-          <div style="margin-left:350px ;" class="">
-            <button id="clcbtn" style="padding:12px ;border-radius:30px ;font-weight: bold;" class="btn btn-secondary ps-5 pe-5 " onclick="calcBMR()">Calculate</button>
+                <div id="loader" class="col-4 p-3">
+                    <div style="width:400px ; height:280px ;" class="col-4 bg-body-secondary mt-5">
+                        <div class="pt-5" style="line-height:100% ; margin-top:30px ;">
+                            <p style="color:#B02A30 ;" class="text-center fs-4 fw-medium">Your BMI is</p>
+                            <p id="BMI" class="fs-1 fw-medium text-center">--</p>
+                            <div id="hide" class="d-flex justify-content-around mt-5 ">
+                                <div id="yellow" class="line">
+                                    <div id="meterBar" style="position: relative; bottom:7px ;font-size: 25px;"
+                                        class=" fw-bolder">|</div>
+                                </div>
+                                <div id="green" class="line"></div>
+                                <div id="orange" class="line"></div>
+                                <div id="red" class="line"></div>
+                            </div>
+                            <div id="hide" class="d-flex justify-content-between mt-2">
+                                <div style="font-size: small;" class="fw-bolder text-secondary">Underweight</div>
+                                <div style="font-size: small;" class="fw-bolder text-secondary">Normal</div>
+                                <div style="font-size: small;" class="fw-bolder text-secondary"> Overweight</div>
+                                <div style="font-size: small;" class="fw-bolder text-secondary">Obesity</div>
+                            </div>
+                        </div>
+                        <p id="help" class="fw-bold  text-center mt-2"></p>
+                        <p id="help2" class="text-center fw-medium mb-3"></p>
 
-          </div>
-          <div>
-            <p class="text-end me-5 fw-bold text-secondary " style="font-style: italic;">Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
-          </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left:350px ;" class="">
+                <button id="clcbtn" style="padding:12px ;border-radius:30px ;font-weight: bold;"
+                    class="btn btn-secondary ps-5 pe-5 " onclick="calcBMR()">Calculate</button>
+
+            </div>
+            <div>
+                <p class="text-end me-5 fw-bold text-secondary " style="font-style: italic;">Healthy BMI range: 18.5
+                    kg/m2 - 25 kg/m2</p>
+            </div>
         </div>
         <script src="./script.js"></script>
-     
+
 </body>
+
 </html>
