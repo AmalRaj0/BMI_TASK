@@ -11,7 +11,7 @@
    
 </head>
 <body>
-    <div style="background-color: #F1F1F1; margin-top: 100px;" class="container pb-4">
+    <div  id="container2" style="background-color: #F1F1F1; " class="container pb-4">
         <div class="d-flex">
             <img src="https://www.iciciprulife.com/content/icici-prudential-life-insurance/tools-and-calculators/bmi_assets/images/Component21.svg"
                 alt="">
@@ -20,14 +20,14 @@
                 <p style="color: #B02A30;font-size:20px ;">Body Mass Index</p>
             </div>
         </div>
-        <div style="background-color: white;" class="container pb-4">
+        <div id="container" style="background-color: white;" class="container pb-4">
             <div class="row">
                 <div class="col-4">
                     <div class="mt-5">
                         <div  class="">
                             <p class="fw-medium text-secondary">GENDER</p>
                         </div>
-                        <div class="d-flex ">
+                        <div id="gender" class="d-flex ">
                             <button id="male"  style="border:.2px solid red ; position: relative;left:15px ;background-color: white;" class="btn  text-secondary fw-semibold ps-5 pe-5" onclick="gender('Male')">Male</button>
                             <button id="female" onclick="gender('Female')" style="border:.2px solid gray ;" class="btn  text-secondary fw-semibold ps-5 pe-5">Female</button>
                         </div>
@@ -38,7 +38,7 @@
                         <p id="hNotify"></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div id="col4" class="col-4">
                     <div class="mt-5">
                         <p class="fw-medium text-secondary">AGE</p>
                     </div>
@@ -54,36 +54,38 @@
                     </div>
                     <p id="Noty"></p>
                 </div>
+              <div id="loader" class="col-4">
                 <div style="width:400px ; height:280px ;" class="col-4 bg-body-secondary mt-5">
-                  <div class="mt-5" style="line-height:100% ;">
-                    <p style="color:#B02A30 ;" class="text-center fs-4 fw-medium">Your BMI is</p>
-                    <p id="BMI" class="fs-1 fw-medium text-center">--</p>
-                    <div  class="d-flex justify-content-around mt-5 ">
-                        <div id="yellow" class="line">
-                            <div id="meterBar" style="position: relative; bottom:7px ;font-size: 25px;" class=" fw-bolder">|</div>
-                        </div>
-                        <div id="green" class="line"></div>
-                        <div id="orange" class="line"></div>
-                        <div id="red" class="line"></div>
+                    <div class="mt-5" style="line-height:100% ;">
+                      <p style="color:#B02A30 ;" class="text-center fs-4 fw-medium">Your BMI is</p>
+                      <p id="BMI" class="fs-1 fw-medium text-center">--</p>
+                      <div id="hide"  class="d-flex justify-content-around mt-5 ">
+                          <div id="yellow" class="line">
+                              <div id="meterBar" style="position: relative; bottom:7px ;font-size: 25px;" class=" fw-bolder">|</div>
+                          </div>
+                          <div id="green" class="line"></div>
+                          <div id="orange" class="line"></div>
+                          <div id="red" class="line"></div>
+                      </div>
+                     <div id="hide" class="d-flex justify-content-between mt-2">
+                      <div style="font-size: small;" class="fw-bolder text-secondary">Underweight</div>
+                      <div style="font-size: small;" class="fw-bolder text-secondary">Normal</div>
+                      <div style="font-size: small;" class="fw-bolder text-secondary"> Overweight</div>
+                      <div style="font-size: small;" class="fw-bolder text-secondary">Obesity</div>
+                     </div>
                     </div>
-                   <div class="d-flex justify-content-between mt-2">
-                    <div style="font-size: small;" class="fw-bolder text-secondary">Underweight</div>
-                    <div style="font-size: small;" class="fw-bolder text-secondary">Normal</div>
-                    <div style="font-size: small;" class="fw-bolder text-secondary"> Overweight</div>
-                    <div style="font-size: small;" class="fw-bolder text-secondary">Obesity</div>
-                   </div>
+                    <p id="help" class="fw-bold  text-center mt-2"></p>
+                    <p id="help2" class="text-center fw-medium mb-3"></p>
+              
                   </div>
-                  <p id="help" class="fw-bold  text-center mt-2"></p>
-                  <p id="help2" class="text-center fw-medium mb-3"></p>
-            
-                </div>
+              </div>
             </div>
           <div style="margin-left:350px ;" class="">
-            <button style="padding:12px ;border-radius:30px ;font-weight: bold;" class="btn btn-secondary ps-5 pe-5 " onclick="calcBMR()">Calculate</button>
+            <button id="clcbtn" style="padding:12px ;border-radius:30px ;font-weight: bold;" class="btn btn-secondary ps-5 pe-5 " onclick="calcBMR()">Calculate</button>
 
           </div>
           <div>
-            <p class="text-end me-5 pe-5 fw-bold text-secondary " style="font-style: italic;">Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
+            <p class="text-end me-5 fw-bold text-secondary " style="font-style: italic;">Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
           </div>
         </div>
         <script src="./script.js"></script>

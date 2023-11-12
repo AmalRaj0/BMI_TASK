@@ -23,8 +23,31 @@ margin-left: 10px;
 }
 
 @media screen and (max-width:400px){
-    html,body{
-        height: 100%;
-        width: 100%;
-    }
+*{
+   margin:0px ;
+   padding:0px;
+}
+#clcbtn{
+    position: relative;
+    right:300px ;
+    bottom:340px ;
+}
+#container2{
+    width: 450px;
+   ;
+}
+.row{
+    display: flex;
+    flex-direction:column;
+}
+#col4{
+  width:100% ; 
+}
+body,html{
+    width:auto;
+    height: auto;
+}
+#loader{
+    margin-top:50px ;
+}
 }
